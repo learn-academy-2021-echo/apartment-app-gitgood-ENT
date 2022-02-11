@@ -31,7 +31,6 @@ apartments = [
         bedrooms: 1,
         bathrooms: 1,
         pets: 'No',
-        user_id: 1
     },
     {
         street: '1234.5 A Street',
@@ -43,10 +42,9 @@ apartments = [
         bedrooms: 1,
         bathrooms: 1,
         pets: 'No',
-        user_id: 1
     }
 ]
 
 apartments.each do |value|
-    Apartment.create value
+    test_user.apartments.create value
 end
